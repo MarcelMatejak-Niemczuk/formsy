@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz</title>
+</head>
+<body>
+    <h3>Oblicz miesięczną ratę</h3>
+    
+    <label for="a">Kurs React.js</label>
+    <input type="checkbox" id="a" name="Kurs_react"><br>
+    <label for="b">Kurs JavaScript</label>
+    <input type="checkbox" id="b" name="Kurs_Java"><br><br>
+
+    <label for="liczba_rat">Liczba rat:</label>
+    <input type="number" id="liczba_rat" name="liczba_rat"><br><br>
+
+    <label for="lista"></label>
+    <select id="wybor" name="wybor">
+        <option value="opti1">Katowice</option>
+        <option value="opti2">Warszawa</option>
+        <option value="opti3">Gdańsk</option>
+    </select><br><br>
+    <button type="submit">Oblicz</button><br><br><br>
+
+    <h1>Kalkulator kosztów montażu</h1>
+
+    <label for="Szerokosc">Szerokość pomieszczenia [m]</label>
+    <input type="number" id="Szerokosc" name="Szerokosc">
+    <label for="Dlugosc">Długość pomieszczenia [m]</label>
+    <input type="number" id="Dlugosc" name="Dlugosc">
+
+    <p>Typ panelu</p>
+
+    <label>
+    <input type="radio" name="podloga" value="laminowane">Panele laminowane</label><br>
+    
+
+    <label>
+    <input type="radio" name="podloga" value="winylowe">Panele winylowe</label><br>
+    
+
+    <label>
+    <input type="radio" name="podloga" value="deska">Deska podłogowa</label><br>
+    <button type="submit">Oblicz</button><br><br><br>
+
+    <label for="liczba"></label>
+    <input type="number" id="liczba" name="liczba">
+    <button type="button" onclick="Przelicz()">Przelicz na binarny</button>
+
+    <p>Brak obliczeń</p><br><br><br>
+
+    <h4>Podaj początek nazwy miasta</h4>
+
+    <form action="" method="POST">
+    <label for="szukaj"></label>
+    <input type="text" id="szukaj" name="szukaj">
+
+    <button type="submit">Szukaj</button><br><br><br>
+
+    <form action="" method="POST">
+    <label for="data_od">Data odbioru od:</label>
+    <input type="date" id="data_od" name="data_od">
+    <label for="data_do">do:</label>
+    <input type="date" id="data_do" name="data_do">
+    <button type="submit">Wyszukaj</button><br><br><br>
+
+        <h1>Dołącz do naszego zespołu</h1>
+
+    <p>Wpisz swoje dane do formularza</p>
+    <form action="skrypt2.php" method="POST">
+    <label for="nazwisko">Nazwisko: </label>
+    <input type="text" id="nazwisko" name="nazwisko" required>
+    <label for="imie">Imię: </label>
+    <input type="text" id="imie" name="imie" required>
+    <label for="funkcja">Funkcja: </label>
+    <select id="funkcja" name="funkcja" required>
+        <option value="uczestnik">uczestnik</option>
+        <option value="przewodnik">przewodnik</option>
+        <option value="zaopatrzeniowiec">zaopatrzeniowiec</option>
+        <option value="organizator">organizator</option>
+        <option value="ratownik">ratownik</option>
+    </select>
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Dodaj</button><br><br><br>
+
+    <button type="button" onclick="funckja()">Losuj nową parę graczy</button><br><br><br>
+
+    <button type="button" onclick="funkcja()">Losuj nowe nagrody</button><br><br><br>
+
+        <form action="" method="post">
+    <label for="wybor"></label>
+    <select id="wybor" name="wybor" required>
+        <option value="opcja1">Wyroby cukiernicze i ciastkarskie</option>
+        <option value="opcja2">Opcja 2</option>
+        <option value="opcja3">Opcja 3</option>
+        <option value="opcja2">Opcja 4</option>
+        <option value="opcja3">Opcja 5</option>
+    </select>
+    <br><br>
+    <button type="submit">Wybierz</button>
+</body>
+</html>
